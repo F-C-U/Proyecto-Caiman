@@ -1,5 +1,6 @@
-from django.urls import include, path
-from .views import registrouser
+from django.urls import path
+from .views import RegistroUsuario  # Asegúrate de importar la clase
+
 urlpatterns = [
-    path('registrouser', registrouser, name='registrouser'),
+    path('registro/', RegistroUsuario.as_view(), name='registro'),
 ]
