@@ -3,7 +3,9 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from django.views import View
 
-from caiman.forms import ProductoForm
+
+from caiman.forms import *
+
 
 class RegistroUsuario(View):
     def get(self, request):
