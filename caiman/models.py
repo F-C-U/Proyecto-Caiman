@@ -7,3 +7,6 @@ class Producto(models.Model):
     cantidad=models.PositiveIntegerField(null=False)
     precio=models.PositiveIntegerField(null=False)
     imagen=models.ImageField(upload_to='productos', null=False)
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Caiman</title>
+    <link rel="stylesheet" href="{% static 'miapp/styles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Tienda de Caiman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ver perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-shopping-cart"></i> Carrito
+                            <span id="cart-count" class="badge badge-pill badge-primary">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        
+        <div class="row mt-4">
+            <!-- Producto 1 -->
+            <div class="col-md-6">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Producto X">
+                    <div class="card-body">
+                        <h5 class="card-title">Caiman Pour Fruits 75º 1L</h5>
+                        <p class="card-text">El alcohol Caimán Pour Fruits 75º de 1L, es un destilado neutro, elaborado a partir de la destilación de cereal en alambique de cobre, obteniendo una bebida espirituosa de alto volumén alcohólico, de pureza cristalina y sabor neutro, ideal para la maceración con frutas.</p>
+                        <h6 class="card-subtitle mb-2 text-muted">$10,000</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
+                            </div>
+                            <input type="text" class="form-control item-quantity" value="1">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-add-to-cart">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="col-md-6">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Producto Y">
+                    <div class="card-body">
+                        <h5 class="card-title">Caiman Elixir 50º 750ml</h5>
+                        <p class="card-text">El Caiman Elixir 50º 750ml es una mezcla de alcohol con una gran variedad de ingredientes, los cuales le dan un sabor único. Un licor muy apreciado por muchos que al probarlo quedan enamorados de su sabor único.</p>
+                        <h6 class="card-subtitle mb-2 text-muted">$8,500</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
+                            </div>
+                            <input type="text" class="form-control item-quan

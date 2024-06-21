@@ -3,4 +3,5 @@ from .views import agregarproducto
 
 urlpatterns = [
     path('agregarproducto/', agregarproducto, name='agregarproducto'),
+    
 ]

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    
+    .product-img {
+      max-width: 100px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Carrito de Compras</h1>
+    <div class="row">
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top product-img" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Caiman</h5>
+            <p class="card-text">Descripción breve del Producto 1.</p>
+            <p class="card-text"><strong>Precio:</strong> $20.00</p>
+            <div class="input-group mb-3">
+              <input type="number" class="form-control" placeholder="Cantidad" min="0">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button">Añadir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top product-img" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Caiman</h5>
+            <p class="card-text">Descripción breve del Producto 2.</p>
+            <p class="card-text"><strong>Precio:</strong> $30.00</p>
+            <div class="input-group mb-3">
+              <input type="number" class="form-control" placeholder="Cantidad" min="0">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button">Añadir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Botón de Pagar -->
+    <div class="text-center">
+      <button class="btn btn-success btn-lg">Pagar <i class="fas fa-shopping-cart ml-2"></i></button>
+    </div>
+  </div>
+
+  <!-- Bootstrap y Font Awesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
