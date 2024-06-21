@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from django.views import View
 
+from caiman.forms import *
+
 class RegistroUsuario(View):
     def get(self, request):
         return render(request, 'caiman/registrouser.html')
@@ -41,4 +43,4 @@ def agregarproducto(request):
     datos={
         "form":form
     }
-        return render(request,'caiman/agregarproducto.html',datos)
+    return render(request,'caiman/agregarproducto.html',datos)
