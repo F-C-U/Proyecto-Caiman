@@ -98,7 +98,7 @@
                     </div>
                     <div class="user-box dropdown">
                         <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+                            <img src="assets/images/images.jpg" class="user-img" alt="user avatar">
                             <div class="user-info ps-3">
                                 <p class="user-name mb-0">ADMIN</p>
                                 <p class="designattion mb-0">administrador</p>
@@ -108,7 +108,7 @@
                             <li>
                                 <div class="dropdown-divider mb-0"></div>
                             </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                            <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Cerrar Sesión</span></a>
                             </li>
                         </ul>
                     </div>
@@ -119,9 +119,10 @@
         <!--start page wrapper -->
         <div class="page-wrapper">
             <div class="page-content">
-                
+                <body>
+                    {% block contenido %}{% endblock contenido %}
+                </body>
             <!--footer(hacia abajo)-->
-
             </div>
         </div>
         <!--end page wrapper -->
